@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설해원 클론 코딩</title>
+</head>
+<body>
+  <!-- 햄버거 메뉴 -->
+  <nav class="sh-nav">
+    <!-- 메뉴 아이콘 -->
+    <a href="javascript:;" class="sh-nav__wrap">
+      <span class="sh-nav__line"></span>
+      <span class="sh-nav__line"></span>
+      <span class="sh-nav__line"></span>
+    </a>
+
+    <!-- 팝업 메뉴 내용 -->
+    <div class="sh-nav__content" style="display: none;">
+      <!-- 팝업 내 좌측 -->
+      <div class="nav-left">
+        <!-- 팝업 내 메인 메뉴 8개 -->
+        <ul class="nav-main">
+          <!-- 객실 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">마운틴스테이</li>
+              <li class="nav-main__info">설해온천</li>
+              <li class="nav-main__info">골프텔</li>
+              <li class="nav-main__info">객실 이용안내</li>
+            </ul>
+          </li>
+
+          <!-- 하우스 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">설해원 하우스</li>
+              <li class="nav-main__info">설해별담</li>
+            </ul>
+          </li>
+
+          <!-- 체육시설[골프] -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">씨뷰코스</li>
+              <li class="nav-main__info">샐몬코스</li>
+              <li class="nav-main__info">파인코스</li>
+              <li class="nav-main__info">더 레전드 코스(18홀)</li>
+              <li class="nav-main__info">스타트하우스</li>
+              <li class="nav-main__info">골프 이용안내</li>
+            </ul>
+          </li>
+
+          <!-- 온천 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">온천사우나</li>
+              <li class="nav-main__info">노천스파</li>
+              <li class="nav-main__info">온천수영장</li>
+              <li class="nav-main__info">면역공방</li>
+              <li class="nav-main__info">클라리스파</li>
+            </ul>
+          </li>
+
+          <!-- 다이닝 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">곧은 레스토랑</li>
+              <li class="nav-main__info">풀라 다이닝 & 바</li>
+              <li class="nav-main__info">설해빵집</li>
+            </ul>
+          </li>
+
+          <!-- 액티비티 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">해풍길</li>
+              <li class="nav-main__info">설해랑</li>
+              <li class="nav-main__info">골프 연습장</li>
+              <li class="nav-main__info">스크린골프</li>
+              <li class="nav-main__info">노래방</li>
+              <li class="nav-main__info">키즈존</li>
+            </ul>
+          </li>
+
+          <!-- 문화공간 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">설해원 생각</li>
+              <li class="nav-main__info">서재 & 레터룸</li>
+              <li class="nav-main__info">GS25</li>
+            </ul>
+          </li>
+
+          <!-- 스페셜 오퍼 -->
+          <li class="nav-main__item">
+            <a href="javascript:;" class="nav-main__img img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <ul class="nav-main__depth">
+              <li class="nav-main__info">패키지</li>
+              <li class="nav-main__info">이벤트</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 하단 숏컷 메뉴 5개 -->
+        <ul class="nav-sub">
+          <li class="nav-sub__list">
+            <a href="javascript:;" class="nav-sub__item">사진과 영상</a>
+          </li>
+          <li class="nav-sub__list">
+            <a href="javascript:;" class="nav-sub__item">설해원 생활</a>
+          </li>
+          <li class="nav-sub__list">
+            <a href="javascript:;" class="nav-sub__item">브랜드 스토리</a>
+          </li>
+          <li class="nav-sub__list">
+            <a href="javascript:;" class="nav-sub__item">설해원 맵</a>
+          </li>
+          <li class="nav-sub__list">
+            <a href="javascript:;" class="nav-sub__item">기프트 카드</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 팝업 내 우측 -->
+      <div class="nav-right">
+        <ul class="member-menu">
+          <li class="member-menu__item">로그인</li>
+          <li class="member-menu__item">마이페이지</li>
+          <li class="member-menu__item">회원등록 인증</li>
+        </ul>
+
+        <!-- 예약하기 버튼 -->
+        <a href="javascript:;" class="btn-reservation">예약하기</a>
+
+        <!-- 회원모집 버튼 -->
+        <a href="javascript:;" class="btn-join">회원모집 ></a>
+
+        <!-- 입회문의 번호 -->
+        <ul class="nav-tel">
+          <li class="nav-tel__txt">입회문의</li>
+          <li class="nav-tel__txt">02.513.0000</li>
+        </ul>
+
+        <!-- 정보 링크 -->
+        <ul class="nav-info">
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">온라인 고객</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">예약 및 취소 안내</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">공지사항</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">보도자료</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">자료실</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">사이트맵</a>
+          </li>
+          <li class="nav-info__item">
+            <a href="javascript:;" class="nav-info__link">오시는 길</a>
+          </li>
+          <li class="nav-info__sns">
+            <a href="javascript:;" class="img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+            <a href="javascript:;" class="img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 메인 슬라이드 영역 -->
+  <section class="sh-main">
+    <div class="swiper-wrapper sh-main__swiper">
+      <div class="swiper-container">
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_01_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_01_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_02_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_02_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_03_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_03_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_04_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_04_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_05_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_05_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_06_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_06_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-box">
+            <img src="./images/main_bg_07_pc.png" alt="" class="m-hide">
+            <img src="./images/main_bg_07_mo.png" alt="" class="m-show">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
