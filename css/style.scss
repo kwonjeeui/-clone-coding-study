@@ -37,25 +37,46 @@ a {
 
 /* footer */
 .sh-footer {
-  @include vw-pc(height, 208);
+  justify-content: space-between;
+  @include vw-pc(height, 138);
   @include vw-pc(padding, 35 0);
   background-color: #949494;
   @include vw-pc(font-size, 12);
   color: #fff;
 
-  &__logo {
-    display: block;
-    @include vw-pc(width, 80);
-    @include vw-pc(height, 80);
+  .inner-1280 {
+    display: flex;
+    justify-content: space-between;
   }
+
+  &__left {
+    display: flex;
+  }
+
+  &__right {
+  }
+
+  &__divi {
+    @include vw-pc(margin-left, 83);
+  }
+
+  &__logo {
+    @include vw-pc(width, 138);
+    text-align: center;
+  }
+
   &__link {
     display: flex;
     @include vw-pc(font-size, 14);
+    font-weight: bold;
   }
+
   &__item {
     position: relative;
-    @include vw-pc(padding, 0 13);
+
     &:not(:first-child) {
+      @include vw-pc(padding, 0 13);
+
       &::after {
         content: "";
         display: block;
@@ -69,8 +90,22 @@ a {
       }
     }
   }
+
   &__info {
+    @include vw-pc(width, 575);
+    li {display: inline;}
+  }
+
+  &__shortcut {
     display: flex;
+    flex-wrap: wrap;
+    @include vw-pc(max-width, 350);
+
+    li {
+      &:not(:first-child, :last-child) {
+        @include vw-pc(margin-left, 15);
+      }
+    }
   }
 }
 

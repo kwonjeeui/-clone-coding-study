@@ -2213,7 +2213,8 @@ a {
 
 /* footer */
 .sh-footer {
-  height: 208px;
+  justify-content: space-between;
+  height: 138px;
   padding: 35px 0px;
   background-color: #949494;
   font-size: 12px;
@@ -2221,7 +2222,7 @@ a {
 }
 @media screen and (max-width: 1440px) {
   .sh-footer {
-    height: 14.4444444444vw;
+    height: 9.5833333333vw;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -2234,24 +2235,34 @@ a {
     font-size: 0.8333333333vw;
   }
 }
-.sh-footer__logo {
-  display: block;
-  width: 80px;
-  height: 80px;
+.sh-footer .inner-1280 {
+  display: flex;
+  justify-content: space-between;
+}
+.sh-footer__left {
+  display: flex;
+}
+.sh-footer__divi {
+  margin-left: 83px;
 }
 @media screen and (max-width: 1440px) {
-  .sh-footer__logo {
-    width: 5.5555555556vw;
+  .sh-footer__divi {
+    margin-left: 5.7638888889vw;
   }
 }
+.sh-footer__logo {
+  width: 138px;
+  text-align: center;
+}
 @media screen and (max-width: 1440px) {
   .sh-footer__logo {
-    height: 5.5555555556vw;
+    width: 9.5833333333vw;
   }
 }
 .sh-footer__link {
   display: flex;
   font-size: 14px;
+  font-weight: bold;
 }
 @media screen and (max-width: 1440px) {
   .sh-footer__link {
@@ -2260,10 +2271,12 @@ a {
 }
 .sh-footer__item {
   position: relative;
+}
+.sh-footer__item:not(:first-child) {
   padding: 0px 13px;
 }
 @media screen and (max-width: 1440px) {
-  .sh-footer__item {
+  .sh-footer__item:not(:first-child) {
     padding: 0vw 0.9027777778vw;
   }
 }
@@ -2279,7 +2292,33 @@ a {
   background: #aaa;
 }
 .sh-footer__info {
+  width: 575px;
+}
+@media screen and (max-width: 1440px) {
+  .sh-footer__info {
+    width: 39.9305555556vw;
+  }
+}
+.sh-footer__info li {
+  display: inline;
+}
+.sh-footer__shortcut {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+@media screen and (max-width: 1440px) {
+  .sh-footer__shortcut {
+    max-width: 24.3055555556vw;
+  }
+}
+.sh-footer__shortcut li:not(:first-child, :last-child) {
+  margin-left: 15px;
+}
+@media screen and (max-width: 1440px) {
+  .sh-footer__shortcut li:not(:first-child, :last-child) {
+    margin-left: 1.0416666667vw;
+  }
 }
 
 @media all and (max-width: 768px) {
