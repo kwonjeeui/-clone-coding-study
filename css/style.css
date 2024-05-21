@@ -2211,6 +2211,22 @@ a {
   display: none;
 }
 
+/* main visual */
+.sh-main .main-swiper {
+  max-width: 1920px;
+  height: 875px;
+}
+@media screen and (max-width: 1440px) {
+  .sh-main .main-swiper {
+    max-width: 133.3333333333vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sh-main .main-swiper {
+    height: 60.7638888889vw;
+  }
+}
+
 /* footer */
 .sh-footer {
   justify-content: space-between;
@@ -2278,6 +2294,7 @@ a {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
+  letter-spacing: -1px;
 }
 @media screen and (max-width: 1440px) {
   .sh-footer__link {
@@ -2287,6 +2304,11 @@ a {
 @media screen and (max-width: 1440px) {
   .sh-footer__link {
     font-size: 0.9722222222vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sh-footer__link {
+    letter-spacing: -0.0694444444vw;
   }
 }
 .sh-footer__item {

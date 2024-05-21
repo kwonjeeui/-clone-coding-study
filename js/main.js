@@ -1,13 +1,16 @@
 const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
-
+  slidesPerView: 1,
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper-prev-button',
+    nextEl: '.swiper-next-button',
   },
 });

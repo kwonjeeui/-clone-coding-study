@@ -35,6 +35,14 @@ a {
   display: none;
 }
 
+/* main visual */
+.sh-main {
+  .main-swiper {
+    @include vw-pc(max-width, 1920);
+    @include vw-pc(height, 875);
+  }
+}
+
 /* footer */
 .sh-footer {
   justify-content: space-between;
@@ -72,6 +80,7 @@ a {
     @include vw-pc(margin-bottom, 15);
     @include vw-pc(font-size, 14);
     font-weight: bold;
+    @include vw-pc(letter-spacing, -1);
   }
 
   &__item {
