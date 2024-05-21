@@ -1,0 +1,85 @@
+@import './mixin';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.m-hide {
+  display: block !important;
+}
+
+.m-show {
+  display: none;
+}
+
+.inner-1280 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sh-logo {
+  display: none;
+}
+
+/* footer */
+.sh-footer {
+  @include vw-pc(height, 208);
+  @include vw-pc(padding, 35 0);
+  background-color: #949494;
+  @include vw-pc(font-size, 12);
+  color: #fff;
+
+  &__logo {
+    display: block;
+    @include vw-pc(width, 80);
+    @include vw-pc(height, 80);
+  }
+  &__link {
+    display: flex;
+    @include vw-pc(font-size, 14);
+  }
+  &__item {
+    position: relative;
+    @include vw-pc(padding, 0 13);
+    &:not(:first-child) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 1px;
+        height: 10px;
+        margin-top: -5px;
+        background: #aaa;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .m-hide {
+    display: none;
+  }
+
+  .m-show {
+    display: block !important;
+  }
+}
