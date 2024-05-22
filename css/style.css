@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (min-width: 769px) {
   html,
   body {
@@ -2211,10 +2212,11 @@ a {
   display: none;
 }
 
+/* nav */
 /* main visual */
 .sh-main .main-swiper {
   max-width: 1920px;
-  height: 875px;
+  height: 950px;
 }
 @media screen and (max-width: 1440px) {
   .sh-main .main-swiper {
@@ -2223,7 +2225,34 @@ a {
 }
 @media screen and (max-width: 1440px) {
   .sh-main .main-swiper {
-    height: 60.7638888889vw;
+    height: 65.9722222222vw;
+  }
+}
+
+/* 설해원의 품격 */
+.sh-intro {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 200px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1440px) {
+  .sh-intro {
+    width: 77.7777777778vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sh-intro {
+    padding-top: 13.8888888889vw;
+  }
+}
+.sh-intro__tit {
+  font-size: 20px;
+  writing-mode: vertical-rl;
+}
+@media screen and (max-width: 1440px) {
+  .sh-intro__tit {
+    font-size: 1.3888888889vw;
   }
 }
 

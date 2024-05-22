@@ -35,11 +35,29 @@ a {
   display: none;
 }
 
+/* nav */
+.sh-nav_ {
+
+}
+
 /* main visual */
 .sh-main {
   .main-swiper {
     @include vw-pc(max-width, 1920);
-    @include vw-pc(height, 875);
+    @include vw-pc(height, 950);
+  }
+}
+
+/* 설해원의 품격 */
+.sh-intro {
+  @include vw-pc(width, 1120);
+  margin: 0 auto;
+  @include vw-pc(padding-top, 200);
+  background-color: #fff;
+
+  &__tit {
+    @include vw-pc(font-size, 20);
+    writing-mode: vertical-rl;
   }
 }
 

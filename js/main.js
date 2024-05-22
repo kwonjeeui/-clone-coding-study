@@ -1,16 +1,15 @@
-const swiper = new Swiper('.swiper', {
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
+var swiper = new Swiper(".swiper", {
   slidesPerView: 1,
-  centeredSlides: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   navigation: {
-    prevEl: '.swiper-prev-button',
-    nextEl: '.swiper-next-button',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
   },
 });
