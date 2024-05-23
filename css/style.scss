@@ -35,29 +35,134 @@ a {
   display: none;
 }
 
-/* nav */
-.sh-nav_ {
-
+.swiper {
+  @include vw-pc(max-width, 1920);
+  @include vw-pc(height, 950);
 }
 
-/* main visual */
-.sh-main {
-  .main-swiper {
-    @include vw-pc(max-width, 1920);
-    @include vw-pc(height, 950);
+.theme-enter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @include vw-pc(width, 1120);
+  margin: 0 auto;
+  @include vw-pc(padding, 200 0);
+
+  .txt-box {
+    writing-mode: vertical-rl;
+    @include vw-pc(margin-right, 176);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @include vw-pc(bottom, -80);
+      @include vw-pc(width, 0.1);
+      @include vw-pc(height, 375);
+      background-color: #aaa;
+      z-index: 10;
+    }
+  }
+
+  &__tit {
+    @include vw-pc(font-size, 30);
+    @include vw-pc(margin-left, 40);
+    color: rgb(207, 173, 23);
+    font-weight: normal;
+  }
+
+  &__txt {
+    @include vw-pc(font-size, 16);
+    @include vw-pc(line-height, 30);
+    color: #888;
+
+    & +.theme-enter__txt {@include vw-pc(margin-right, 30);}
   }
 }
 
+/* nav */
+.sh-nav_ {
+}
+
 /* 설해원의 품격 */
-.sh-intro {
-  @include vw-pc(width, 1120);
-  margin: 0 auto;
-  @include vw-pc(padding-top, 200);
-  background-color: #fff;
+.intro-prod {
+  @include vw-pc(padding, 110 0);
+  background-color: #f4f1d0;
+
+  .prod-list {
+    display: flex;
+    justify-content: space-between;
+    @include vw-pc(width, 1119);
+    @include vw-pc(height, 504);
+    margin: 0 auto;
+    
+    &__item {
+      @include vw-pc(width, 363);
+      background-color: #fff;
+    }
+
+    &__inner {
+      @include vw-pc(padding, 40 0);
+      text-align: center;
+    }
+
+    &__tit {
+      @include vw-pc(margin-bottom, 16);
+      @include vw-pc(font-size, 25);
+      @include vw-pc(letter-spacing, -1);
+      color: #a57432;
+    }
+
+    &__desc {
+      display: block;
+      @include vw-pc(margin-bottom, 33);
+      @include vw-pc(font-size, 15);
+      @include vw-pc(letter-spacing, -1);
+      color: #888;
+    }
+
+    &__btn {
+      overflow: hidden;
+      display: block;
+      @include vw-pc(width, 28);
+      @include vw-pc(height, 28);
+      margin: 0 auto;
+      text-align: center;
+      background-image: url('../images/intro_list_btn_pc.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      border: 1px solid #a57432;
+      text-indent: -9999px;
+      font-size: 0;
+    }
+  }
+}
+
+/* 온천 */
+.water-display {
+  position: relative;
+  
+  &__inner {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-align: center;
+    color: #fff;
+  }
 
   &__tit {
-    @include vw-pc(font-size, 20);
-    writing-mode: vertical-rl;
+    display: block;
+    @include vw-pc(margin-bottom, 20);
+    @include vw-pc(font-size, 40);
+    font-weight: normal;
+  }
+
+  &__desc {
+    @include vw-pc(font-size, 23);
+    @include vw-pc(letter-spacing, -1);
   }
 }
 
@@ -71,6 +176,7 @@ a {
   color: #fff;
 
   .inner-1280 {
+    @include vw-pc(max-width, 1280);
     display: flex;
     justify-content: space-between;
   }
@@ -147,6 +253,7 @@ a {
     @include vw-pc(width, 52);
     @include vw-pc(height, 24);
     @include vw-pc(margin-bottom, 10);
+    @include vw-pc(background-size, 52 20);
     background: left no-repeat url('../images/footer_sns_pc.png');
   }
 
