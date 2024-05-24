@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설해원 클론 코딩 - sub</title>
+  <link rel="stylesheet" href="./css/sub.css" type="text/css">
+  <link rel="stylesheet" href="./js/sub.js">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <h1 class="sh-logo" style="display: none;">설해원</h1>
+
+    <!-- 햄버거 메뉴 -->
+    <nav class="sh-nav">
+      <!-- 메뉴 아이콘 -->
+      <a href="javascript:;" class="sh-nav__wrap">
+        <span class="sh-nav__line"></span>
+        <span class="sh-nav__line"></span>
+        <span class="sh-nav__line"></span>
+      </a>
+
+      <!-- 팝업 메뉴 내용 -->
+      <div class="sh-nav__content" style="display: none;">
+        <!-- 팝업 내 좌측 -->
+        <div class="nav-left">
+          <!-- 팝업 내 메인 메뉴 8개 -->
+          <ul class="nav-main">
+            <!-- 객실 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">마운틴스테이</li>
+                <li class="nav-main__info">설해온천</li>
+                <li class="nav-main__info">골프텔</li>
+                <li class="nav-main__info">객실 이용안내</li>
+              </ul>
+            </li>
+  
+            <!-- 하우스 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">설해원 하우스</li>
+                <li class="nav-main__info">설해별담</li>
+              </ul>
+            </li>
+  
+            <!-- 체육시설[골프] -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">씨뷰코스</li>
+                <li class="nav-main__info">샐몬코스</li>
+                <li class="nav-main__info">파인코스</li>
+                <li class="nav-main__info">더 레전드 코스(18홀)</li>
+                <li class="nav-main__info">스타트하우스</li>
+                <li class="nav-main__info">골프 이용안내</li>
+              </ul>
+            </li>
+  
+            <!-- 온천 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">온천사우나</li>
+                <li class="nav-main__info">노천스파</li>
+                <li class="nav-main__info">온천수영장</li>
+                <li class="nav-main__info">면역공방</li>
+                <li class="nav-main__info">클라리스파</li>
+              </ul>
+            </li>
+  
+            <!-- 다이닝 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">곧은 레스토랑</li>
+                <li class="nav-main__info">풀라 다이닝 & 바</li>
+                <li class="nav-main__info">설해빵집</li>
+              </ul>
+            </li>
+  
+            <!-- 액티비티 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">해풍길</li>
+                <li class="nav-main__info">설해랑</li>
+                <li class="nav-main__info">골프 연습장</li>
+                <li class="nav-main__info">스크린골프</li>
+                <li class="nav-main__info">노래방</li>
+                <li class="nav-main__info">키즈존</li>
+              </ul>
+            </li>
+  
+            <!-- 문화공간 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">설해원 생각</li>
+                <li class="nav-main__info">서재 & 레터룸</li>
+                <li class="nav-main__info">GS25</li>
+              </ul>
+            </li>
+  
+            <!-- 스페셜 오퍼 -->
+            <li class="nav-main__item">
+              <a href="javascript:;" class="nav-main__img img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <ul class="nav-main__depth">
+                <li class="nav-main__info">패키지</li>
+                <li class="nav-main__info">이벤트</li>
+              </ul>
+            </li>
+          </ul>
+  
+          <!-- 하단 숏컷 메뉴 5개 -->
+          <ul class="nav-sub">
+            <li class="nav-sub__list">
+              <a href="javascript:;" class="nav-sub__item">사진과 영상</a>
+            </li>
+            <li class="nav-sub__list">
+              <a href="javascript:;" class="nav-sub__item">설해원 생활</a>
+            </li>
+            <li class="nav-sub__list">
+              <a href="javascript:;" class="nav-sub__item">브랜드 스토리</a>
+            </li>
+            <li class="nav-sub__list">
+              <a href="javascript:;" class="nav-sub__item">설해원 맵</a>
+            </li>
+            <li class="nav-sub__list">
+              <a href="javascript:;" class="nav-sub__item">기프트 카드</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- 팝업 내 우측 -->
+        <div class="nav-right">
+          <ul class="member-menu">
+            <li class="member-menu__item">로그인</li>
+            <li class="member-menu__item">마이페이지</li>
+            <li class="member-menu__item">회원등록 인증</li>
+          </ul>
+  
+          <!-- 예약하기 버튼 -->
+          <a href="javascript:;" class="btn-reservation">예약하기</a>
+  
+          <!-- 회원모집 버튼 -->
+          <a href="javascript:;" class="btn-join">회원모집 ></a>
+  
+          <!-- 입회문의 번호 -->
+          <ul class="nav-tel">
+            <li class="nav-tel__txt">입회문의</li>
+            <li class="nav-tel__txt">02.513.0000</li>
+          </ul>
+  
+          <!-- 정보 링크 -->
+          <ul class="nav-info">
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">온라인 고객</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">예약 및 취소 안내</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">공지사항</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">보도자료</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">자료실</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">사이트맵</a>
+            </li>
+            <li class="nav-info__item">
+              <a href="javascript:;" class="nav-info__link">오시는 길</a>
+            </li>
+            <li class="nav-info__sns">
+              <a href="javascript:;" class="img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+              <a href="javascript:;" class="img-box">
+                <img src="" alt="" class="m-hide">
+                <img src="" alt="" class="m-show">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="sh-nav__right" style="display: none;">
+        <p class="sh-nav__tel">예약문의 033.673.9900</p>
+        <a href="javascript:;" class="img-box">
+          <img src="" alt="" class="m-hide">
+          <img src="" alt="" class="m-show">
+        </a>
+      </div>
+    </nav>
+
+    <!-- 메인 비주얼 -->
+    <section class="sub-visual">
+      <img src="" alt="" class="m-hide">
+      <img src="" alt="" class="m-show">
+    </section>
+
+    <!-- 메뉴 nav -->
+    <section class="sub-menu">
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="javascript:;">홈</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="javascript:;">객실</a>
+          <ul class="menu-depth" style="display: none;">
+            <li class="menu-depth__item">
+              <a href="javascript:;">객실</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">하우스</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">체육시설(골프)</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">온천</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">다이닝</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">액티비티</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">문화공간</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">패키지</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">이벤트</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-list__item">
+          <a href="javascript:;">전체보기</a>
+          <ul class="menu-depth" style="display: none;">
+            <li class="menu-depth__item">
+              <a href="javascript:;">전체보기</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">마운틴스테이</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">설해온천</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">골프텔</a>
+            </li>
+            <li class="menu-depth__item">
+              <a href="javascript:;">객실 이용 안내</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sub-room">
+      <div class="inner-1200">
+        <h2>객실</h2>
+
+        <!-- 마운틴스테이 -->
+        <div class="theme-wrap">
+          <div class="theme-wrap__inner">
+            <div class="img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </div>
+
+            <div class="txt-box">
+              <strong>마운틴스테이</strong>
+              <p>MOUNTAIN STAY</p>
+              <p>7가지 럭셔리 타입에서 누리는 프라이빗한 쉼</p>
+            </div>
+          </div>
+
+          <ul class="room-list">
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>히노끼 스위트</p>
+                <span>Hinokki Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>폴리폼 스위트</p>
+                <span>Poliform Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>풀 스위트</p>
+                <span>Pool Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>스파 스위트 A</p>
+                <span>Spa Suite A</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>스파 스위트 B</p>
+                <span>Spa Suite B</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>클래식 스위트 A</p>
+                <span>Classic Suite A</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>클래식 스위트 B</p>
+                <span>Classic Suite B</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 설해온천 -->
+        <div class="theme-wrap">
+          <div class="theme-wrap__inner">
+            <div class="img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </div>
+
+            <div class="txt-box">
+              <strong>설해온천</strong>
+              <p>SEOLHAE HOT SPRING</p>
+              <p>10가지 평면과 10배의 배려로 다채로운 쉼을 선물하는 최고급 타워형 객실</p>
+            </div>
+          </div>
+
+          <ul class="room-list">
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>패밀리 풀 스위트</p>
+                <span>Family Pool Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>디럭스 풀 스위트</p>
+                <span>Deluxe Pool Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>가든 풀 스위트</p>
+                <span>Garden Pool Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>트리플 스위트</p>
+                <span>Triple Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>프리미엄 스위트</p>
+                <span>Premium Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>시네마 스위트</p>
+                <span>Cinema Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>다실 스위트</p>
+                <span>T-Room Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>디럭스 패밀리 스위트</p>
+                <span>Deluxe Family Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>트리플 패밀리 스위트</p>
+                <span>Triple Family Suite</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>디럭스</p>
+                <span>Deluxe</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>레귤러</p>
+                <span>Regular</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>스튜디오</p>
+                <span>Studio</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 골프텔 -->
+        <div class="theme-wrap">
+          <div class="theme-wrap__inner">
+            <div class="img-box">
+              <img src="" alt="" class="m-hide">
+              <img src="" alt="" class="m-show">
+            </div>
+
+            <div class="txt-box">
+              <strong>골프텔</strong>
+              <p>GOLFTEL</p>
+              <p>단순함속의 세련됨, 단아함속의 편안함</p>
+            </div>
+          </div>
+
+          <ul class="room-list">
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>40평</p>
+                <span>40 Pyeong</span>
+              </a>
+            </li>
+            <li class="room-list__item">
+              <a href="javascript:;">
+                <p>54평</p>
+                <span>54 Pyeong</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a href="javascript:;">객실 이용 안내 바로가기</a>
+
+      <!-- 푸터 -->
+  <footer class="sh-footer">
+    <div class="inner-1280">
+      <div class="sh-footer__left">
+        <a href="javascript:;" class="sh-footer__logo">
+          <img src="./images/footer_logo_pc.png">
+        </a>
+
+        <div class="sh-footer__divi">
+          <ul class="sh-footer__link">
+            <li class="sh-footer__item">
+              <a href="javascript:;">사진과 영상</a>
+            </li>
+            <li class="sh-footer__item">
+              <a href="javascript:;">설해원 생활</a>
+            </li>
+            <li class="sh-footer__item">
+              <a href="javascript:;">브랜드 스토리</a>
+            </li>
+            <li class="sh-footer__item">
+              <a href="javascript:;">기프트 카드</a>
+            </li>
+          </ul>
+      
+          <ul class="sh-footer__info sh-footer__info--top">
+            <div class="sh-footer__inner">
+              <li class="sh-footer__desc">설해원</li>
+              <li class="sh-footer__desc">강원특별자치도 양양군 손양면 공항로 230</li>
+              <li class="sh-footer__desc">T 033)670-7700</li>
+              <li class="sh-footer__desc">F . 033)673-7313</li>
+            </div>
+            <div class="sh-footer__inner">
+              <li class="sh-footer__desc">서울사무소 서울특별시 강남구 압구정로 154 </li>
+              <li class="sh-footer__desc">T . 02)547-2770 </li>
+              <li class="sh-footer__desc">F . 02)515-9015</li>
+            </div>
+          </ul>
+      
+          <ul class="sh-footer__info sh-footer__info--btm">
+            <li class="sh-footer__desc">대표이사: 안제근</li>
+            <li class="sh-footer__desc">사업자등록번호: 227-81-09624</li>
+            <li class="sh-footer__desc">통신판매업신고 2019-강원양양-0026</li>
+          </ul>
+    
+          <span>SeolhaeOne. All Rights Reserved</span>
+        </div>
+      </div>
+
+      <div class="sh-footer__right">
+        <ul class="sh-footer__sns">
+          <li>
+            <a href="https://www.instagram.com/seolhaeone/" class="sh-footer__insta"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCbmrH-sw_ufx1qbfHTDM13g/featured" class="sh-footer__youtube"></a>
+          </li>
+        </ul>
+
+        <ul class="sh-footer__shortcut">
+          <li class="sh-footer__desc">
+            <a href="javascript:;">개인정보취급방침</a>
+          </li>
+          <li class="sh-footer__desc">
+            <a href="javascript:;">이용약관</a>
+          </li>
+          <li class="sh-footer__desc">
+            <a href="javascript:;">사이트맵</a>
+          </li>
+          <li class="sh-footer__desc">
+            <a href="javascript:;">덕구온천리조트</a>
+          </li>
+          <li class="sh-footer__desc">
+            <a href="javascript:;">마케팅제휴문의</a>
+          </li>
+        </ul>
+    
+        <p class="sh-footer__noti">홈페이지 내 모든 사진은 설해원의 소중한 자산입니다.<br> 사진의 무단 도용 및 배포를 금지합니다.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

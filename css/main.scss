@@ -31,10 +31,6 @@ a {
   margin: 0 auto;
 }
 
-.sh-logo {
-  display: none;
-}
-
 .swiper {
   @include vw-pc(max-width, 1920);
   @include vw-pc(height, 950);
