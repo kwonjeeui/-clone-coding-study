@@ -201,20 +201,23 @@ a {
       position: relative;
       width: auto;
 
-      &::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        @include vw-pc(width, 1);
-        @include vw-pc(height, 10);
-        @include vw-pc(margin-top, -5);
-        background: #c9c9c9;
+      &:not(:last-child){
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          @include vw-pc(width, 1);
+          @include vw-pc(height, 10);
+          @include vw-pc(margin-top, -5);
+          background: #c9c9c9;
+        }
       }
     }
 
     &__link {
+      @include vw-pc(padding, 0 7.5);
       @include vw-pc(font-size, 12);
       color: #999;
     }
