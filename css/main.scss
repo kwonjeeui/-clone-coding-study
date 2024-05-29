@@ -79,7 +79,146 @@ a {
 }
 
 /* nav */
-.sh-nav_ {
+.sh-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include vw-pc(padding, 32 40);
+  z-index: 10;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include vw-pc(width, 45);
+    @include vw-pc(height, 36);
+  }
+
+  &__line {
+    width: 100%;
+    @include vw-pc(height, 3);
+    background-color: #fff;
+  }
+}
+
+.nav-modal {
+  display: none;
+  @include vw-pc(width, 1200);
+  @include vw-pc(height, 700);
+  @include vw-pc(margin, 87 auto 0);
+  background-color: #fff;
+  overflow: hidden;
+
+  &.active {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 10;
+  }
+
+  .nav-left {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    @include vw-pc(width, 793);
+    @include vw-pc(padding, 67 58 70);
+  }
+
+  .nav-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include vw-pc(width, 220);
+    @include vw-pc(height, 565);
+    @include vw-pc(padding, 68 35);
+    background-color: #e7e7e7;
+  }
+
+  .nav-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include vw-pc(gap, 16 40);
+    @include vw-pc(width, 756);
+    @include vw-pc(margin-bottom, 20);
+
+    &__img {
+      display: block;
+      @include vw-pc(margin-bottom, 16);
+    }
+
+    &__info {
+      @include vw-pc(margin-bottom, 7);
+      @include vw-pc(font-size, 12);
+      text-align: center;
+      color: #666;
+    }
+  }
+
+  .nav-sub {
+    display: flex;
+    justify-content: space-between;
+    @include vw-pc(width, 793);
+    @include vw-pc(height, 44);
+    background-color: #f2f2f2;
+
+    &__list {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include vw-pc(width, 158);
+
+      &:not(:last-child){
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          @include vw-pc(width, 1);
+          @include vw-pc(height, 10);
+          @include vw-pc(margin-top, -5);
+          background-color: #b5a692;
+        }
+      }
+    }
+    
+    &__item {
+      @include vw-pc(font-size, 12);
+      color: #a57432;
+    }
+  }
+
+  .member-menu {
+    display: flex;
+    width: 100%;
+    
+    &__item {
+      position: relative;
+      width: auto;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include vw-pc(width, 1);
+        @include vw-pc(height, 10);
+        @include vw-pc(margin-top, -5);
+        background: #c9c9c9;
+      }
+    }
+
+    &__link {
+      @include vw-pc(font-size, 12);
+      color: #999;
+    }
+  }
 }
 
 /* 설해원의 품격 */
