@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var swiper = new Swiper(".swiper", {
+  var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -15,3 +15,5 @@ $(document).ready(function(){
     },
   });
 });
+
+console.log('hhhhhh');

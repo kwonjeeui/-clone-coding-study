@@ -2194,6 +2194,9 @@ a {
 .img-box {
   width: 100%;
 }
+.img-box img {
+  width: 100%;
+}
 
 .m-hide {
   display: block !important;
