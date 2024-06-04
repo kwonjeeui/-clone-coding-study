@@ -31,60 +31,8 @@ a {
 }
 
 .inner-1280 {
-  max-width: 1280px;
+  @include vw-max(max-width, 1280);
   margin: 0 auto;
-}
-
-.swiper {
-  @include vw-pc(max-width, 1920);
-  @include vw-pc(height, 950);
-}
-
-.theme-enter {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  @include vw-pc(width, 1120);
-  margin: 0 auto;
-  @include vw-pc(padding, 200 0);
-
-  .txt-box {
-    writing-mode: vertical-rl;
-    @include vw-pc(margin-right, 176);
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      @include vw-pc(bottom, -80);
-      @include vw-pc(width, 0.1);
-      @include vw-pc(height, 375);
-      background-color: #aaa;
-      z-index: 10;
-    }
-  }
-
-  &__tit {
-    @include vw-pc(font-size, 30);
-    @include vw-pc(margin-left, 40);
-    color: rgb(207, 173, 23);
-    font-weight: normal;
-  }
-
-  &__txt {
-    @include vw-pc(font-size, 16);
-    @include vw-pc(line-height, 30);
-    color: #888;
-
-    & +.theme-enter__txt {@include vw-pc(margin-right, 30);}
-
-    &--except {
-      writing-mode: horizontal-tb;
-      @include vw-pc(line-height, 17);
-    }
-  }
 }
 
 /* nav */
@@ -232,6 +180,151 @@ a {
       color: #999;
     }
   }
+}
+
+.swiper-container {
+  position: relative;
+
+  .swiper-pagination-bullets {
+    left: 50%;
+    transform: translateX(-50%);
+    @include vw-pc(bottom, 30);
+    
+    .swiper-pagination-bullet {
+      @include vw-pc(margin, 0 7);
+    }
+  }
+}
+
+.main-swiper,
+.intro-swiper,
+.golf-swiper {
+  .swiper-slide {
+    img {
+      @include vw-pc(max-width, 1920);
+      @include vw-pc(height, 950);
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    &::after {
+      // display: none;
+    }
+  }
+
+  .swiper-pagination-bullets {
+    @include vw-pc(bottom, 30);
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination-bullet {
+    @include vw-pc(width, 9);
+    @include vw-pc(height, 9);
+    background: none;
+    border: 1px solid #fff;
+  }
+}
+
+.special-swiper {
+  @include vw-pc(width, 1200);
+  margin: 0 auto;
+
+  .swiper-container {
+    .swiper-slide {
+      @include vw-pc(margin-bottom, 50);
+      text-align: left;
+
+      img {
+        @include vw-pc(width, 338);
+        @include vw-pc(height, 320);
+        @include vw-pc(margin-bottom, 20);
+      }
+    }
+
+    .swiper-pagination-bullets {
+      @include vw-pc(bottom, 0);
+    }
+  
+    .swiper-pagination .swiper-pagination-bullet-active {
+      background: #999;
+    }
+    
+    .swiper-pagination-bullet {
+      @include vw-pc(width, 9);
+      @include vw-pc(height, 9);
+      background: none;
+      border: 1px solid #999;
+      opacity: 1;
+    }
+  }
+
+  &__tit {
+    @include vw-pc(margin-bottom, 40);
+    @include vw-pc(font-size, 15);
+    @include vw-pc(line-height, 20);
+    @include vw-pc(letter-spacing, -1);
+    color: #333;
+  }
+
+  &__date {
+    @include vw-pc(font-size, 15);
+    color: #999;
+  }
+}
+
+.theme-enter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @include vw-pc(width, 1120);
+  margin: 0 auto;
+  @include vw-pc(padding, 200 0);
+
+  .txt-box {
+    writing-mode: vertical-rl;
+    @include vw-pc(margin-right, 176);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @include vw-pc(bottom, -80);
+      @include vw-pc(width, 0.1);
+      @include vw-pc(height, 375);
+      background-color: #aaa;
+      z-index: 10;
+    }
+  }
+
+  &__tit {
+    @include vw-pc(font-size, 30);
+    @include vw-pc(margin-left, 40);
+    color: rgb(207, 173, 23);
+    font-weight: normal;
+  }
+
+  &__txt {
+    @include vw-pc(font-size, 16);
+    @include vw-pc(line-height, 30);
+    color: #888;
+
+    & +.theme-enter__txt {@include vw-pc(margin-right, 30);}
+
+    &--except {
+      writing-mode: horizontal-tb;
+      @include vw-pc(line-height, 17);
+    }
+  }
+}
+
+video {
+  @include vw-pc(max-width, 468);
 }
 
 /* 테마별 상품 소개 */
@@ -444,13 +537,6 @@ a {
     font-weight: 300;
     color: #333;
   }
-
-  // .special-swiper {
-  //   .swiper-slide {
-  //     @include vw-pc(width, 338);
-  //     @include vw-pc(height, 320);
-  //   }
-  // }
 }
 
 /* footer */
