@@ -182,20 +182,6 @@ a {
   }
 }
 
-.swiper-container {
-  position: relative;
-
-  .swiper-pagination-bullets {
-    left: 50%;
-    transform: translateX(-50%);
-    @include vw-pc(bottom, 30);
-    
-    .swiper-pagination-bullet {
-      @include vw-pc(margin, 0 7);
-    }
-  }
-}
-
 .main-swiper,
 .intro-swiper,
 .golf-swiper {
@@ -204,17 +190,6 @@ a {
       @include vw-pc(max-width, 1920);
       @include vw-pc(height, 950);
     }
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    &::after {
-      // display: none;
-    }
-  }
-
-  .swiper-pagination-bullets {
-    @include vw-pc(bottom, 30);
   }
 
   .swiper-pagination .swiper-pagination-bullet-active {
