@@ -17,9 +17,7 @@ $(document).ready(function(){
       clickable: true,
     },
   });
-});
 
-$(document).ready(function(){
   var specialswiper = new Swiper(".custom-swiper", {
     slidesPerView: 3,
     loop: false,
@@ -34,5 +32,3 @@ $(document).ready(function(){
     },
   });
 });
-
-console.log('hhhhhh');
