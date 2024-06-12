@@ -31,4 +31,11 @@ $(document).ready(function(){
       clickable: true,
     },
   });
+
+  var navBtn = document.querySelector('.sh-nav__wrap');
+  var navModal = document.querySelector('.nav-modal');
+  
+  navBtn.addEventListener('click', function() {
+      navModal.classList.toggle('active');
+  });
 });

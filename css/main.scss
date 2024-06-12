@@ -26,9 +26,9 @@ a {
   display: block !important;
 }
 
-.m-show {
-  display: none !important;
-}
+// .m-show {
+//   display: none !important;
+// }
 
 .inner-1280 {
   @include vw-max(max-width, 1280);
